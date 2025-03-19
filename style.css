@@ -245,6 +245,28 @@ footer p {
     margin-top: 10px;
 }
 
+/* New styles for main images */
+.main-images {
+    padding: 30px 0;
+    background-color: #f8f8f8; /* or any background you prefer */
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+}
+
+.main-image {
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* adjust as needed*/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Space between images if they wrap */
+    object-fit: cover; /* Prevents distortion, crops if necessary */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .container {
@@ -276,5 +298,11 @@ footer p {
 
     .contact-form {
         padding: 20px;
+    }
+
+    .main-image {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px; /* But not too big */
+        height: auto;
     }
 }
